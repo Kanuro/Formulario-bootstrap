@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-body-tertiary">
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+                <header class="mb-4">
+                    
+                    <h1 class="display-6 fw-bold mb-2">Perfil, disponibilidade e projeto</h1>
+                </header>
+
+                <form id="perfil-form" class="needs-validation" action="#" method="post" enctype="multipart/form-data" novalidate>
+                    <input type="hidden" name="formulario" value="perfil-profissional">
+
+                    <section class="form-section" aria-labelledby="contato-titulo">
+                        <h2 id="contato-titulo" class="h4 section-title">Dados de contato</h2>
+                        <div class="row g-3">
+                            <div class="col-md-8">
+                                <label for="nome" class="form-label">Nome completo</label>
+                                <input type="text" class="form-control" id="nome" name="nome" autocomplete="name" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="idade" class="form-label">Idade</label>
+                                <input type="number" class="form-control" id="idade" name="idade" min="14" max="100">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" autocomplete="email" placeholder="nome@exemplo.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" name="telefone" autocomplete="tel" placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="col-md-8">
+                                <label for="portfolio" class="form-label">Portfólio ou site</label>
+                                <input type="url" class="form-control" id="portfolio" name="portfolio" placeholder="https://seusite.com">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="senha" class="form-label">Senha de acesso</label>
+                                <input type="password" class="form-control" id="senha" name="senha" minlength="8" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="busca" class="form-label">Palavras-chave profissionais</label>
+                                <input type="search" class="form-control" id="busca" name="busca" placeholder="Ex.: design, front-end, gestão">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section" aria-labelledby="formacao-titulo">
+                        <h2 id="formacao-titulo" class="h4 section-title">Formação e experiências</h2>
+                        <div class="row g-3">
+                            <div class="col-md-7">
+                                <label for="formacao" class="form-label">Formação principal</label>
+                                <input type="text" class="form-control" id="formacao" name="formacao">
+                            </div>
+                            <div class="col-md-5">
+                                <label for="nivel" class="form-label">Nível de formação</label>
+                                <select class="form-select" id="nivel" name="nivel">
+                                    <option selected disabled value="">Selecione...</option>
+                                    <option value="tecnico">Técnico</option>
+                                    <option value="graduacao">Graduação</option>
+                                    <option value="pos">Pós-graduação</option>
+                                    <option value="mestrado">Mestrado</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empresa" class="form-label">Empresa mais recente</label>
+                                <input type="text" class="form-control" id="empresa" name="empresa">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cargo" class="form-label">Cargo ou função</label>
+                                <input type="text" class="form-control" id="cargo" name="cargo">
+                            </div>
+                            <div class="col-12">
+                                <label for="experiencias" class="form-label">Resumo das experiências</label>
+                                <textarea class="form-control" id="experiencias" name="experiencias" rows="4" placeholder="Conte brevemente sobre suas principais responsabilidades e resultados."></textarea>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section" aria-labelledby="datas-titulo">
+                        <h2 id="datas-titulo" class="h4 section-title">Datas e disponibilidades</h2>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label for="inicio" class="form-label">Data de início</label>
+                                <input type="date" class="form-control" id="inicio" name="inicio">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="mes" class="form-label">Mês de referência</label>
+                                <input type="month" class="form-control" id="mes" name="mes">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="semana" class="form-label">Semana disponível</label>
+                                <input type="week" class="form-control" id="semana" name="semana">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="horario" class="form-label">Melhor horário</label>
+                                <input type="time" class="form-control" id="horario" name="horario">
+                            </div>
+                            <div class="col-md-8">
+                                <label for="reuniao" class="form-label">Data e hora para reunião</label>
+                                <input type="datetime-local" class="form-control" id="reuniao" name="reuniao">
+                            </div>
+                            <div class="col-12">
+                                <label for="dedicacao" class="form-label">Disponibilidade semanal: <output id="dedicacao-valor">20</output> horas</label>
+                                <input type="range" class="form-range" id="dedicacao" name="dedicacao" min="1" max="44" value="20">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section" aria-labelledby="preferencias-titulo">
+                        <h2 id="preferencias-titulo" class="h4 section-title">Preferências</h2>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="cor" class="form-label">Cor de destaque</label>
+                                <input type="color" class="form-control form-control-color" id="cor" name="cor" value="#0d6efd" title="Escolha uma cor">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="curriculo" class="form-label">Currículo ou apresentação</label>
+                                <input type="file" class="form-control" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx">
+                            </div>
+                            <div class="col-12">
+                                <span class="form-label d-block">Modelo de trabalho preferido</span>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="modelo" id="remoto" value="remoto" checked>
+                                        <label class="form-check-label" for="remoto">Remoto</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="modelo" id="hibrido" value="hibrido">
+                                        <label class="form-check-label" for="hibrido">Híbrido</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="modelo" id="presencial" value="presencial">
+                                        <label class="form-check-label" for="presencial">Presencial</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="notificacoes" name="notificacoes" value="sim">
+                                    <label class="form-check-label" for="notificacoes">Quero receber oportunidades por e-mail.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section" aria-labelledby="projeto-titulo">
+                        <h2 id="projeto-titulo" class="h4 section-title">Informações sobre um projeto</h2>
+                        <div class="row g-3">
+                            <div class="col-md-8">
+                                <label for="projeto" class="form-label">Nome do projeto</label>
+                                <input type="text" class="form-control" id="projeto" name="projeto" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="orcamento" class="form-label">Orçamento estimado (R$)</label>
+                                <input type="number" class="form-control" id="orcamento" name="orcamento" min="0" step="0.01">
+                            </div>
+                            <div class="col-12">
+                                <label for="descricao" class="form-label">Descrição do projeto</label>
+                                <textarea class="form-control" id="descricao" name="descricao" rows="5" placeholder="Objetivo, público, prazo e principais entregas."></textarea>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="d-flex flex-wrap align-items-center gap-2 pt-2">
+                        <button type="submit" class="btn btn-primary">Enviar formulário</button>
+                        <button type="button" id="salvar-rascunho" class="btn btn-outline-primary">Salvar rascunho</button>
+                        <button type="reset" class="btn btn-outline-secondary">Limpar campos</button>
+                    </div>
+                    <div id="form-status" class="alert d-none mt-3 mb-0" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
