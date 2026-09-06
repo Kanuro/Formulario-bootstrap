@@ -1,0 +1,37 @@
+body {
+    color: #202a36;
+}
+
+main {
+    max-width: 1080px;
+}
+
+.form-section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.image-submit {
+    width: 140px;
+    height: 42px;
+}
+
+@media (max-width: 576px) {
+    .form-section {
+        padding: 16px;
+    }
+
+    .image-submit {
+        display: none;
+    }
+}
+ 
