@@ -1,3 +1,6 @@
+JEAN WELLINGTON CORREA BUENO
+
+
 1- O obetivo do projeto é a utilização do bootstrap para a organizção da estética do formulário, mesclando clases do css e do bootstrap.
 
 2-foram utilizados o html, css, js e bootstrap.
@@ -24,4 +27,4 @@ reset= botão de limpar as áreas do formulario,
 button= área de funcionamento de um botão,
 image= serve para criar um botão visualmente melhor.
 
-
+link-Github Pages:https://kanuro.github.io/Formulario-bootstrap/
